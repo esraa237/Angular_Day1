@@ -1,8 +1,8 @@
-<div class="py-4 bg-light">
+<div class="py-4">
 <h2 class="text-center my-4 fw-bold">Categories</h2>
 <div class="d-flex flex-wrap justify-content-center gap-3">
   @for (category of categories; track $index) {
-    <div class="product-card">
+    <div class="category-card">
       <h4 class="fw-semibold">{{ category.name }}</h4>
       <img [src]="category.image" [alt]="category.name" width="150">
       <p class="mt-2 text-muted">Prices Range:</p>

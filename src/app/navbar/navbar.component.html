@@ -1,8 +1,9 @@
 <div class="d-flex justify-content-between align-items-center bg-light px-5 py-2">
   <img [src]="imageUrl" alt="logo">
   <ul class="d-flex list-unstyled gap-3 m-0">
-    <li>Home</li>
-    <li>About</li>
-    <li>Contact</li>
+    <li><a routerLink="/home" routerLinkActive="active" class="text-decoration-none text-black">Home</a></li>
+    <li><a routerLink="/about" routerLinkActive="active" class="text-decoration-none text-black">About</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active" class="text-decoration-none text-black">Contact</a></li>
+    <li><a routerLink="/products" routerLinkActive="active" class="text-decoration-none text-black">Products</a></li>
   </ul>
 </div>

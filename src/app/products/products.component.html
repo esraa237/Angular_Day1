@@ -1,0 +1,16 @@
+<div class="py-4">
+  <h2 class="text-center my-4 fw-bold ">Products</h2>
+  <div class="d-flex flex-wrap justify-content-center gap-3">
+  @for (product of products; track $index) {
+    <app-product [product]="product"></app-product>
+    <!-- <div class="product-card">
+      <h1>{{ product.productName }}</h1>
+      <img [src]="product.image" [alt]="product.productName" width="150">
+      <p>Price: ${{ product.productPrice }}</p>
+      @if(product.onSale.includes(true)) {
+        <p>🔥 On Sale</p>
+      }
+    </div> -->
+  }
+  </div>
+  </div>

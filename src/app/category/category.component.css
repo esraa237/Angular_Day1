@@ -1,4 +1,4 @@
-.product-card {
+.category-card {
   width: 350px;
   border: 1px solid #dee2e6;
   border-radius: 10px;
@@ -9,18 +9,18 @@
   transition: transform 0.2s ease-in-out;
 }
 
-.product-card:hover {
+.category-card:hover {
   transform: scale(1.03);
 }
 
-.product-card img {
+.category-card img {
   height:200px;
   width: 60%;
   border-radius: 8px;
   margin-bottom: 10px;
 }
 
-.product-card p {
+.category-card p {
   margin: 5px 0;
   font-weight: 500;
 }

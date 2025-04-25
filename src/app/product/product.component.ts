@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Product } from '../product';
 
 @Component({
@@ -9,43 +9,7 @@ import { Product } from '../product';
 })
 export class ProductComponent {
 
-  products: Product[] = [
-    {
-      image: "/images/bag.avif",
-      productName: "Leather Bag",
-      productPrice: 150,
-      onSale: [true]
-    },
-    {
-      image: "/images/headphone.avif",
-      productName: "Wireless Headphones",
-      productPrice: 90,
-      onSale: [false]
-    },
-    {
-      image: "/images/perfume.avif",
-      productName: "Luxury Perfume",
-      productPrice: 120,
-      onSale: [ false]
-    },
-    {
-      image: "/images/serum.avif",
-      productName: "Skin Serum",
-      productPrice: 45,
-      onSale: [true]
-    },
-    {
-      image: "/images/shoes.avif",
-      productName: "Shoes",
-      productPrice: 99,
-      onSale: [false]
-    },
-    {
-      image: "/images/watch.avif",
-      productName: "Smart Watch",
-      productPrice: 180,
-      onSale: [true]
-    }
-  ];
+  @Input() product!: Product;
+
 
 }
